@@ -2,13 +2,19 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      inputs.home-manager.nixosModules.default
+      # ./main-user.nix
     ];
+
+    # main-user.enable = true
+    # main-user.userName = sp4c3m4n
+
 
   # NixOS:
   nix.settings.experimental-features = [ "nix-command" "flakes"];
@@ -141,6 +147,13 @@
     ];
   };
 
+  home-manager = {
+    specialArgs = { inherit inputs; };
+    users = {
+      "sp4c3m4n" = import ./home.nix;
+    };
+  };
+
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -154,6 +167,8 @@
   #  wget
     pkgs.git
     pkgs.lshw
+    pkgs.nh
+    pkgs.ghostty
     vscode
   ];
 
