@@ -7,13 +7,7 @@
       #"wal -R" + "\n" +
       "clear";
 
-    initExtra =
-      "source ~/.p10k.zsh" + "\n" +
-      "neofetch" + "\n" +
-      "export TERM=xterm" + "\n" +
-      "export EDITOR=nvim" + "\n" +
-      "bindkey '^[[A' menu-complete"
-    ;
+    initExtra = "neofetch";
 
     shellAliases = {
       nix-edit = "code /etc/nixos";

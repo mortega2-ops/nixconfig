@@ -8,7 +8,6 @@
   ];
 
   # colorScheme = inputs.nix-colors.colorSchemes.dracula;
-  zsh.initExtra = "neofetch";
   # programs.ghostty = {
   # enable = true;
   # settings = {
