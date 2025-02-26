@@ -148,7 +148,7 @@
   };
 
   home-manager = {
-    specialArgs = { inherit inputs; };
+    extraSpecialArgs = { inherit inputs; };
     users = {
       "sp4c3m4n" = import ./home.nix;
     };
@@ -169,6 +169,7 @@
     pkgs.lshw
     pkgs.nh
     pkgs.ghostty
+    pkgs.libreoffice
     vscode
   ];
 
