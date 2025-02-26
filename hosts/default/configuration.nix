@@ -165,20 +165,13 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-    pkgs.git
-    pkgs.lshw
-    # pkgs.nh
-    # pkgs.ghostty
-    # pkgs.libreoffice
+    git
+    lshw
+    nnn
+    nh
+    zip
     vscode
   ];
-
-  environment.shellAliases = {
-    nixconfig = "code /etc/nixos/configuration.nix";
-    build = "nixos-rebuild build";
-    rebuild = "nixos-rebuild switch --use-remote-sudo";
-    test-rebuild = "nixos-rebuild test --use-remote-sudo";
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

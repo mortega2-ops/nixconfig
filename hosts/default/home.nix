@@ -2,12 +2,20 @@
 
 {
   imports = [ 
-    inputs.nix-colors.homeManagerModules.default 
+    inputs.nix-colors.homeManagerModules.default
+    ../../configs/zsh.nix 
     # ./features/ghostty.nix
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-
+  # colorScheme = inputs.nix-colors.colorSchemes.dracula;
+  zsh.initExtra = "neofetch";
+  # programs.ghostty = {
+  # enable = true;
+  # settings = {
+  #   foreground = "#${config.colorScheme.palette.base05}";
+  #   background = "#${config.colorScheme.palette.base00}";
+  #   };
+  # };
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "sp4c3m4n";
@@ -28,14 +36,9 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
-    nnn
-    nh
-    zip
-
+    neofetch
     libreoffice
     ghostty
-    # wpsoffice
-
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
