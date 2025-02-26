@@ -1,6 +1,13 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
+  imports = [ 
+    inputs.nix-colors.homeManagerModules.default 
+    ./features/ghostty.nix
+  ];
+
+  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "sp4c3m4n";
@@ -24,6 +31,9 @@
     nnn
     nh
     zip
+
+    libreoffice
+    ghostty
     # wpsoffice
 
     # # It is sometimes useful to fine-tune packages, for example, by applying

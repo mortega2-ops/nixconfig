@@ -72,7 +72,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -167,9 +167,9 @@
   #  wget
     pkgs.git
     pkgs.lshw
-    pkgs.nh
-    pkgs.ghostty
-    pkgs.libreoffice
+    # pkgs.nh
+    # pkgs.ghostty
+    # pkgs.libreoffice
     vscode
   ];
 
