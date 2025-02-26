@@ -3,7 +3,7 @@
 {
   imports = [ 
     inputs.nix-colors.homeManagerModules.default 
-    ./features/ghostty.nix
+    # ./features/ghostty.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
