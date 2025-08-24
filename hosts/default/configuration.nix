@@ -176,6 +176,7 @@
     vscode
     espeak-ng
     pkgs.piper-tts
+    zoom
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
