@@ -33,7 +33,7 @@
         insmod fat
         insmod chain
         search --no-floppy --fs-uuid --set=root 7C0658CF06588BD0
-        chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+        chainloader /EFI/Microsoft/Boot/bootmgr.efi
       }
     '';
   };
