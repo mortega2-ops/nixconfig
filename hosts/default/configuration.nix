@@ -176,7 +176,7 @@
     vscode
     espeak-ng
     pkgs.piper-tts
-    zoom
+    os-prober
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
