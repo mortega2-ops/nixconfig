@@ -32,7 +32,7 @@
         insmod part_gpt
         insmod fat
         insmod chain
-        search --no-floppy --fs-uuid --set=root 7C0658CF06588BD0
+        set root='hd0,gpt1'
         chainloader /EFI/Microsoft/Boot/bootmgr.efi
       }
     '';
