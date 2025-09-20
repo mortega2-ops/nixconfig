@@ -20,23 +20,24 @@
   nix.settings.experimental-features = [ "nix-command" "flakes"];
 
   # Bootloader.
-#  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub = {
-    enable = true;
-    device = "nodev";
-    efiSupport = true;
-    useOSProber = true;  # Keep this in case it works in the future
-    extraEntries = ''
-      menuentry "Windows 11" {
-        insmod part_gpt
-        insmod fat
-        insmod chain
-        set root='hd0,gpt1'
-        chainloader /EFI/Microsoft/Boot/bootmgr.efi
-      }
-    '';
-  };
+  boot.loader.grub.enable = false;
+  # boot.loader.grub = {
+  #   enable = true;
+  #   device = "nodev";
+  #   efiSupport = true;
+  #   useOSProber = true;  # Keep this in case it works in the future
+  #   extraEntries = ''
+  #     menuentry "Windows 11" {
+  #       insmod part_gpt
+  #       insmod fat
+  #       insmod chain
+  #       set root='hd0,gpt1'
+  #       chainloader /EFI/Microsoft/Boot/bootmgr.efi
+  #     }
+  #   '';
+  # };
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
