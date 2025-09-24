@@ -194,8 +194,8 @@
   # List services that you want to enable:
 
   services.udev.extraRules = ''
-    # Ledger devices - give users in "users" group read/write on hidraw
-    SUBSYSTEM=="hidraw", ATTRS{idVendor}=="2c97", MODE="0664", GROUP="users"
+    # Ledger Nano S Plus (2c97:5011)
+  SUBSYSTEM=="hidraw", ATTRS{idVendor}=="2c97", ATTRS{idProduct}=="5011", MODE="0664", GROUP="users", TAG+="uaccess"
     '';
 
   # Enable the OpenSSH daemon.
