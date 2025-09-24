@@ -193,7 +193,7 @@
 
   # List services that you want to enable:
 
-  services.udev.extreaRules = ''
+  services.udev.extraRules = ''
     # Ledger devices - give users in "users" group read/write on hidraw
     SUBSYSTEM=="hidraw", ATTRS{idVendor}=="2c97", MODE="0664", GROUP="users"
     '';
