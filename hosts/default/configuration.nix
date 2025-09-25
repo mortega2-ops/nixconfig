@@ -181,6 +181,7 @@
     pkgs.piper-tts
     os-prober
     ledger-live-desktop
+    efibootmgr
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
