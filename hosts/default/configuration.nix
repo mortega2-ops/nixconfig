@@ -214,7 +214,7 @@
   #stylix
   stylix.enable = true;
   stylix.image = ./wallpaper.jpg;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+  # stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
   # services.udev.extraRules = ''
   #   # Ledger Nano S Plus (2c97:5011)
