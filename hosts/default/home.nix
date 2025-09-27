@@ -35,9 +35,15 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
-    neofetch
-    libreoffice
+    git
     ghostty
+    neofetch
+    nnn
+    nh
+    libreoffice
+    vscode
+    code-cursor
+    ledger-live-desktop
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of

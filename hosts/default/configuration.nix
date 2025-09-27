@@ -93,6 +93,7 @@
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
+    enable32Bit = true;
   };
 
   # Load nvidia driver for Xorg and Wayland
@@ -165,16 +166,11 @@
     autosuggestions.enable = true;
   };
 
-  # programs.alacritty = {
-  #   enable = true;
-  #   settings = {
-  #     colors = inputs.nix-colors.lib-core.gruvbox-dark;
-  #     font.normal.family = "FiraCode Nerd Font";
-  #   };
-  # };
-
   # Install firefox.
   programs.firefox.enable = true;
+
+  # Install Steam
+  programs.steam.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -184,17 +180,10 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-    git
     lshw
-    nnn
-    nh
-    zip
-    vscode
-    espeak-ng
-    pkgs.piper-tts
     os-prober
-    ledger-live-desktop
     efibootmgr
+    zip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
