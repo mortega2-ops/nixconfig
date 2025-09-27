@@ -8,6 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix.url = "github:danth/stylix";
     nix-colors.url = "github:misterio77/nix-colors";
   };
 
@@ -17,6 +18,7 @@
       modules = [
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
+        inputs.stylix.nixosModules.stylix
       ];
     };
   };
