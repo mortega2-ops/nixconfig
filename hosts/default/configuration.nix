@@ -158,7 +158,20 @@
     };
   };
 
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    syntaxHighlighting.enable = true;
+    autosuggestions.enable = true;
+  };
+
+  # programs.alacritty = {
+  #   enable = true;
+  #   settings = {
+  #     colors = inputs.nix-colors.lib-core.gruvbox-dark;
+  #     font.normal.family = "FiraCode Nerd Font";
+  #   };
+  # };
 
   # Install firefox.
   programs.firefox.enable = true;
