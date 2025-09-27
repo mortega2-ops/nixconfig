@@ -9,7 +9,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
-      inputs.stylix.nixosModules.stylix
       # ./main-user.nix
     ];
 
@@ -213,8 +212,8 @@
   ];
 
   #stylix
-  stylix.enable = true;
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+  inputs.stylix.enable = true;
+  inputs.stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
   # services.udev.extraRules = ''
   #   # Ledger Nano S Plus (2c97:5011)
