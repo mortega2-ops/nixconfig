@@ -7,6 +7,8 @@
     # ./features/ghostty.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   # colorScheme = inputs.nix-colors.colorSchemes.dracula;
   # programs.ghostty = {
   # enable = true;

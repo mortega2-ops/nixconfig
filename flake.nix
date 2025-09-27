@@ -20,7 +20,6 @@
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
       ];
-      nixpkgs.config.allowUnfree = true;
     };
   };
 }
