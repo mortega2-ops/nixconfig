@@ -4,7 +4,7 @@
   imports = [ 
     inputs.nix-colors.homeManagerModules.default
     # ../../configs/zsh.nix
-    # ./features/ghostty.nix
+    ./features/ghostty.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

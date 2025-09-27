@@ -210,7 +210,6 @@
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gigavolt.yaml";
   stylix.polarity = "dark";
   stylix.targets.gtk.enable = true;
-  # stylix.targets.ghostty.enable = true;
 
   # services.udev.extraRules = ''
   #   # Ledger Nano S Plus (2c97:5011)
