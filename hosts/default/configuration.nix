@@ -184,6 +184,10 @@
     os-prober
     efibootmgr
     zip
+    htop
+    lm_sensors
+    procps
+    nvtopPackages.nvidia
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
