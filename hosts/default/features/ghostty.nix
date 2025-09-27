@@ -16,7 +16,7 @@ in
     package = myGhostty; # to fix a but in current builds of ghostty
     #package = pkgs.ghostty;
   };
-  home.file."./.config/ghostty/config".text = ''
+  home.file."$HOME/.config/ghostty/config".text = ''
 
     #theme = Aura
     theme = Dracula
