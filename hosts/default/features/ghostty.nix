@@ -1,4 +1,5 @@
 ﻿{ pkgs, config, ... }:
+
 {
   programs.ghostty = {
     enable = true;
@@ -12,6 +13,6 @@
       # Disables ligatures
       font-feature = ["-liga" "-dlig" "-calt"];
 
-    }
+    };
   };
 }
