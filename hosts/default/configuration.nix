@@ -211,6 +211,10 @@
     pkgs.ledger-udev-rules
   ];
 
+  #stylix
+  stylix.enable = true;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+
   # services.udev.extraRules = ''
   #   # Ledger Nano S Plus (2c97:5011)
   #   SUBSYSTEM=="hidraw", ATTRS{idVendor}=="2c97", ATTRS{idProduct}=="5011", MODE="0664", GROUP="users", TAG+="uaccess"
