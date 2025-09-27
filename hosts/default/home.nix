@@ -3,7 +3,6 @@
 {
   imports = [ 
     inputs.nix-colors.homeManagerModules.default
-    inputs.stylix.nixosModules.stylix
     # ../../configs/zsh.nix
     # ./features/ghostty.nix
   ];
