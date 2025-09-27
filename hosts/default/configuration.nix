@@ -212,7 +212,8 @@
   ];
 
   #stylix
-  stylix.enable = true;
+  stylix.enable = true
+  stylix.image = null;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
   # services.udev.extraRules = ''
