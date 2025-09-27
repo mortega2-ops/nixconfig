@@ -214,7 +214,6 @@
   #stylix
   stylix.enable = true;
   stylix.image = ./wallpaper.jpg;
-  stylix.targets.ghostty.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 
   # services.udev.extraRules = ''
